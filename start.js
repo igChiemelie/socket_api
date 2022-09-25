@@ -11,9 +11,9 @@ var users = [];
 
 require('dotenv').config();
 
-app.all('/', (req, res) => {
+app.get('/', (req, res) => {
     console.log("Just got a request!")
-    res.send('Yo!')
+    res.send('return request!')
 })
 
 io.on("connection", (socket) => {
@@ -68,5 +68,5 @@ io.on("connection", (socket) => {
 
 const port = 4000;
 http.listen(port, () => {
-    console.log('Running on port: '+port);
+    console.log('Running on emelie-port: '+port);
 });
