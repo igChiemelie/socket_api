@@ -1,0 +1,32 @@
+{
+  "name": "dreamchat",
+  "version": "1.0.0",
+  "description": "chatApp",
+  "main": "start.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "start_chatApp": "nodemon index.js",
+    "devStart": "nodemon MAIN.js",
+    "igCode": "nodemon server.js",
+    "igStart": "nodemon start.js"
+  },
+  "author": "I.G Chiemelie",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "formidable": "^2.0.1",
+    "mustache-express": "^1.3.2",
+    "mysql": "^2.18.1",
+    "mysqli": "^3.1.4",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1",
+    "sweetalert2": "^11.4.29"
+  }
+}
