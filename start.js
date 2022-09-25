@@ -11,6 +11,10 @@ var users = [];
 
 require('dotenv').config();
 
+app.all('/', (req, res) => {
+    console.log("Just got a request!")
+    res.send('Yo!')
+})
 
 io.on("connection", (socket) => {
     //attach incoming listerner for new user
