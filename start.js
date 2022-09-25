@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const http = require('https').Server(app);
+// const http = require('http').Server(app);
+const http = require('https').createServer(app);
 
 const socket = require("socket.io");
 
